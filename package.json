@@ -1,10 +1,26 @@
 {
 
   "scripts": {
+
     "styling": "npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch",
+
     "server": "python3 manage.py runserver"
+
   },
+
   "devDependencies": {
+
     "tailwindcss": "^3.3.3"
+
+  },
+
+  "dependencies": {
+
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+
+    "@tailwindcss/typography": "^0.5.9"
+
   }
+
 }
+
