@@ -49,11 +49,18 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'events',
+    'compressor',
 
     # Other
     'crispy_forms',
     'storages',
 ]
+
+COMPRESS_ROOT = os.path.join(BASE_DIR, 'static')
+
+COMPRESS_ENABLED = True
+
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
