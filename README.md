@@ -1,7 +1,18 @@
 # Code Institute
 
-Welcome Chris Z.,
+to get it running:
 
-We have preinstalled all of the tools you need to get started.
+(1 and 2 will be done automatically in gitpod)
 
-Happy coding!
+1.
+```
+pip install -r requirements.txt
+```
+
+2.
+```
+pip install --no-binary :all: psycopg2
+```
+
+3.
+remove .env-sample to .env file and add secret keys
